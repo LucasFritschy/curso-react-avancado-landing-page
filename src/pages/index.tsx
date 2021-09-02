@@ -27,7 +27,9 @@ const Index = ({
   sectionModules,
   sectionAgenda,
   pricingBox,
-  sectionAboutUs
+  sectionAboutUs,
+  sectionReviews,
+  sectionFaq
 }: LandingPageProps) => (
   <>
     <SectionHero logo={logo} header={header} />
@@ -38,8 +40,8 @@ const Index = ({
     <SectionAgenda {...sectionAgenda} />
     <PricingBox {...pricingBox} />
     <SectionAboutUs {...sectionAboutUs} />
-    <SectionReviews />
-    <SectionFaq />
+    <SectionReviews {...sectionReviews} />
+    <SectionFaq {...sectionFaq} />
     <Footer />
     <JsonSchema />
   </>
@@ -49,8 +51,6 @@ export const getStaticProps: GetStaticProps = async () => {
   const { landingPage } = await client
     .request(GET_LANDING_PAGE)
     .then((data) => data)
-
-  console.log(landingPage.sectionAboutUs)
 
   return {
     props: {
