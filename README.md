@@ -1,6 +1,8 @@
 # Simple NextJS Quick Start
 
-A simple project starter to work with React, NextJS and Styled Components
+Projeto do curso React Avançado do instrutor Willian Justen. [https://www.udemy.com/course/react-avancado/]
+
+O primeiro projeto do curso é uma integração da própria Landing Page do curso com dados dinâmicos de uma api do Strapi.
 
 You can see the example in [https://nextjs-quickstart.now.sh/](https://nextjs-quickstart.now.sh/)
 
